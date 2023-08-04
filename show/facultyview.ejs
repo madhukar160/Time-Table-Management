@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <title>Timetable</title>
+    <style>
+        table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+.time-interval th {
+  background-color: #f5f5f5;
+}
+
+.week-names {
+  background-color: #d3d3d3;
+  font-weight: bold;
+}
+
+.timetable {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.timetable h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.heading {
+  text-decoration: none;
+  color: #333;
+  font-size: 32px;
+}
+
+.heading:hover {
+  color: #555;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #333;
+}
+
+header h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+    </style>
+    
+  </head>
+  <body>
+    <header>
+    
+    <a href="/" class="btn">LOGOUT</a>
+    
+  </header>
+  <div class="timetable">
+    <h1 style="margin-top: 100px; text-align: center; margin-bottom: 20px;">Timetable</h1>
+    <table border="1" cellspacing="0" cellpadding="4">
+      <tr class="time-interval">
+        <th>Day</th>
+        <th>8:40-9:30</th>
+        <th>9:30-10:20</th>
+        <th>10:20-11:10</th>
+        <th>11:10-12:00</th>
+        <th>12:50-1:40</th>
+        <th>1:40-2:30</th>
+        <th>2:30-3:20</th>
+        <th>3:20-4:10</th>
+      </tr>
+      <tr>
+        <th class="week-names">Monday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'mon' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th class="week-names">Tuesday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'tue' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th class="week-names">Wednesday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'wed' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th class="week-names">Thursday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'thu' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+          
+      </tr>
+      <tr>
+        <th class="week-names">Friday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'fri' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+      <tr>
+        <th class="week-names">Saturday</th>
+        <% for (var i = 1; i <= 8; i++) { %>
+            <% var found = false; %>
+            <% for (var j = 0; j < results.length; j++) { %>
+                <% if (results[j].day == 'sat' && results[j].hour == i) { %> 
+                    <% if(results[j].year != '' && results[j].subject != '') { %>
+                        <th><%= results[j].subject %> - <%= results[j].year %><%= results[j].section %></th>
+                    <% } else { %>
+                        <th>-</th>
+                    <% } %>
+                    <% found = true; %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+            <% if (!found) { %>
+                <th>-</th>
+            <% } %>
+        <% } %>  
+      </tr>
+    </table>
+</div>
+  </body>
+</html>

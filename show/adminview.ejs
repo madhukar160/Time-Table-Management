@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Timetable</title>
+    <style>
+       
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+tr:first-child {
+  background-color: #ddd;
+  font-size: 18px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1 class="heading">TIME TABLE</h1>
+    <a href="/" class="btn">LOGOUT</a>
+    
+  </header>
+    <h1 style="margin-top: 100px; text-align: center; font-size: 30px; margin-bottom: 50px;">Timetable</h1>
+    <table border="1" cellspacing="0" cellpadding="4" >
+      <tr>
+        <th>Day</th>
+        <th>8:40-9:30</th>
+        <th>9:30-10:20</th>
+        <th>10:20-11:10</th>
+        <th>11:10-12:00</th>
+        <th>12:50-1:40</th>
+        <th>1:40-2:30</th>
+        <th>2:30-3:20</th>
+        <th>3:20-4:10</th>
+      </tr>
+      <tr>
+        <th>Monday</th>
+        <% for (var i = 0; i < results.length; i++) { %>
+            <% if (results[i].day === 'mon') { %>
+              <th><%= results[i].subject %> (<%= results[i].name %>)</th>
+            <% } %>
+          <% } %>  
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <% for (var i = 0; i < results.length; i++) { %>
+            <% if (results[i].day === 'tue') { %>
+              <th><%= results[i].subject %> (<%= results[i].name %>)</th>
+            <% } %>
+          <% } %>  
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <% for (var i = 0; i < results.length; i++) { %>
+            <% if (results[i].day === 'wed') { %>
+              <th><%= results[i].subject %> (<%= results[i].name %>)</th>
+            <% } %>
+          <% } %>  
+      </tr>
+      <tr>
+        <th>Thusrsday</th>
+        <% for (var i = 0; i < results.length; i++) { %>
+            <% if (results[i].day === 'thu') { %>
+              <th><%= results[i].subject %> (<%= results[i].name %>)</th>
+            <% } %>
+          <% } %>  
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <% for (var i = 0; i < results.length; i++) { %>
+            <% if (results[i].day === 'fri') { %>
+              <th><%= results[i].subject %> (<%= results[i].name %>)</th>
+            <% } %>
+          <% } %>  
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <% for (var i = 0; i < results.length; i++) { %>
+            <% if (results[i].day === 'sat') { %>
+              <th><%= results[i].subject %> (<%= results[i].name %>)</th>
+            <% } %>
+          <% } %>  
+      </tr>
+    </table>
+  </body>
+</html>
