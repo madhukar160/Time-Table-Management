@@ -1,0 +1,93 @@
+1<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"href="style1.css">
+        <link rel="stylesheet"href="style3.css">
+        <style>
+          /* Style for the login form container */
+form {
+  background-color: #4a4646;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  box-shadow: 10px 20px 30px #242323;
+}
+body{
+  background-size: 70% ;
+  background-image: url("https://img.freepik.com/premium-photo/clear-gradient-color-background_36043-2954.jpg");
+  background-size: 100%;
+}
+
+/* Style for the form headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:aliceblue;
+  
+  
+}
+
+/* Style for the form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for the form input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Style for the login button */
+input[type="submit"] {
+  background-color: #450000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the registration link */
+a {
+  color: #450000;
+  text-align: center;
+}
+
+.admin-label{
+  color: aliceblue;
+  font-size: 20px;
+}
+
+
+
+        </style>
+      </head>
+    <body>
+      <header>
+      <a href="/home" class="heading"><h1>Admin Login</h1></a>
+    </header>
+      <form action="/adminlogin" method="post">
+        <h2>LOGIN</h2>
+        <div class="admin-form-group">
+          <label for="username" class="admin-label">Username:</label>
+          <input required="" name="username" id="username" type="text" class="admin-input">
+        </div>
+        <div class="admin-form-group">
+          <label for="password" class="admin-label">Password:</label>
+          <input required="" name="password" id="password" type="password" class="admin-input">
+        </div>
+        <div class="admin-form-group">
+          <input value="Login" type="submit" class="admin-submit">
+        </div>
+        <p>Don't have an account? <a href="adminregister.html">register here</a></p>
+      </form>     
+    </body>
+</html>

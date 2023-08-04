@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      /* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-size: 100%;
+  background-image: url("https://img.freepik.com/premium-photo/clear-gradient-color-background_36043-2954.jpg");
+
+
+}
+
+form{
+  margin-left: 150px;
+}
+.gg{
+  color:#f7f3f3;
+  background-color: #4a4646;
+  size: 30px;
+  
+}
+table{
+  table-layout:auto;
+  margin-left: 10px;
+  
+}
+h3{
+  color:#333;
+  font-size: 20px;
+}
+
+h1 {
+  color: #450000;
+  align: center;
+  font-size: 30px;
+
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+h1{
+  text-align: center;
+  margin-left: 150px;;
+}
+h3{
+  margin-left: 150px;
+  font-size: 20px;
+}
+
+th {
+  background-color:#450000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.gfg {
+  border-spacing: 0 15px;
+}
+
+/* Form styles */
+label {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+
+select {
+  margin-right: 50px;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: rgb(163, 241, 249);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(158, 222, 244);
+}
+
+.gg{
+  justify-content: center;
+  margin-left: 450px;
+  background-size: 30px;
+
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  label,
+  select {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome Admin...</h1>
+    <h3>Now you can change , create timetables of your wish.</h3>
+    
+    <form action="/adminmainpage" method="post" name="maindb" id="">
+    <label for="yearchoose">Choose Year : </label>
+    <select name="year">
+        
+        <option value="2">2</option>
+        <option value="3">3 </option>
+        <option value="4">4</option>
+        
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <label for="sectionchoose">Choose Section : </label>
+    <select name="section">
+        
+        <option value="A">A</option>
+        <option value="B">B </option>
+        <option value="C">C</option>
+    
+    </select>
+  
+    <br><br>
+        <table>
+            <thead>
+              <tr>
+                <th name="day0" >Period</th>
+                <th name="day1" >Monday</th>
+                <th name="day2" >Tuesday</th>
+                <th name="day3" >Wednesday</th>
+                <th name="day3" >Thursday</th>
+                <th name="day5" >Friday</th>
+                <th name="day6" >Saturday</th>
+              </tr>
+            </thead>
+            <tbody class="gfg">
+              <tr>
+                <td name="hour">1</td>
+                <td><input type="text" placeholder="Sub Name" name="subname1mon">&nbsp;<input type="text" placeholder="Faculty" name="facname1mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname1tue">&nbsp;<input type="text" placeholder="Faculty" name="facname1tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname1wed">&nbsp;<input type="text" placeholder="Faculty" name="facname1wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname1thu">&nbsp;<input type="text" placeholder="Faculty" name="facname1thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname1fri">&nbsp;<input type="text" placeholder="Faculty" name="facname1fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname1sat">&nbsp;<input type="text" placeholder="Faculty" name="facname1sat"> </td>
+
+
+              </tr>
+              <tr>
+                <td name="hour">2</td>
+                <td><input type="text" placeholder="Sub Name" name="subname2mon">&nbsp;<input type="text" placeholder="Faculty" name="facname2mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname2tue">&nbsp;<input type="text" placeholder="Faculty" name="facname2tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname2wed">&nbsp;<input type="text" placeholder="Faculty" name="facname2wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname2thu">&nbsp;<input type="text" placeholder="Faculty" name="facname2thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname2fri">&nbsp;<input type="text" placeholder="Faculty" name="facname2fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname2sat">&nbsp;<input type="text" placeholder="Faculty" name="facname2sat"> </td>
+
+              </tr>
+              <tr>
+                <td name="hour">3</td>
+                <td><input type="text" placeholder="Sub Name" name="subname3mon">&nbsp;<input type="text" placeholder="Faculty" name="facname3mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname3tue">&nbsp;<input type="text" placeholder="Faculty" name="facname3tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname3wed">&nbsp;<input type="text" placeholder="Faculty" name="facname3wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname3thu">&nbsp;<input type="text" placeholder="Faculty" name="facname3thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname3fri">&nbsp;<input type="text" placeholder="Faculty" name="facname3fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname3sat">&nbsp;<input type="text" placeholder="Faculty" name="facname3sat"> </td>
+
+              <tr>
+                <td name="hour">4</td>
+                <td><input type="text" placeholder="Sub Name" name="subname4mon">&nbsp;<input type="text" placeholder="Faculty" name="facname4mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname4tue">&nbsp;<input type="text" placeholder="Faculty" name="facname4tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname4wed">&nbsp;<input type="text" placeholder="Faculty" name="facname4wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname4thu">&nbsp;<input type="text" placeholder="Faculty" name="facname4thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname4fri">&nbsp;<input type="text" placeholder="Faculty" name="facname4fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname4sat">&nbsp;<input type="text" placeholder="Faculty" name="facname4sat"> </td>
+
+              </tr>
+              <tr>
+                <td name="hour">5</td>
+                <td><input type="text" placeholder="Sub Name" name="subname5mon">&nbsp;<input type="text" placeholder="Faculty" name="facname5mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname5tue">&nbsp;<input type="text" placeholder="Faculty" name="facname5tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname5wed">&nbsp;<input type="text" placeholder="Faculty" name="facname5wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname5thu">&nbsp;<input type="text" placeholder="Faculty" name="facname5thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname5fri">&nbsp;<input type="text" placeholder="Faculty" name="facname5fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname5sat">&nbsp;<input type="text" placeholder="Faculty" name="facname5sat"> </td>
+
+              </tr>
+              <tr>
+                <td name="hour">6</td>
+                <td><input type="text" placeholder="Sub Name" name="subname6mon">&nbsp;<input type="text" placeholder="Faculty" name="facname6mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname6tue">&nbsp;<input type="text" placeholder="Faculty" name="facname6tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname6wed">&nbsp;<input type="text" placeholder="Faculty" name="facname6wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname6thu">&nbsp;<input type="text" placeholder="Faculty" name="facname6thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname6fri">&nbsp;<input type="text" placeholder="Faculty" name="facname6fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname6sat">&nbsp;<input type="text" placeholder="Faculty" name="facname6sat"> </td>
+
+              </tr>
+              <tr>
+                <td name="hour">7</td>
+                <td><input type="text" placeholder="Sub Name" name="subname7mon">&nbsp;<input type="text" placeholder="Faculty" name="facname7mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname7tue">&nbsp;<input type="text" placeholder="Faculty" name="facname7tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname7wed">&nbsp;<input type="text" placeholder="Faculty" name="facname7wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname7thu">&nbsp;<input type="text" placeholder="Faculty" name="facname7thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname7fri">&nbsp;<input type="text" placeholder="Faculty" name="facname7fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname7sat">&nbsp;<input type="text" placeholder="Faculty" name="facname7sat"> </td>
+
+              </tr>
+
+              <tr>
+                <td name="hour">8</td>
+                <td><input type="text" placeholder="Sub Name" name="subname8mon">&nbsp;<input type="text" placeholder="Faculty" name="facname8mon"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname8tue">&nbsp;<input type="text" placeholder="Faculty" name="facname8tue"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname8wed">&nbsp;<input type="text" placeholder="Faculty" name="facname8wed"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname8thu">&nbsp;<input type="text" placeholder="Faculty" name="facname8thu"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname8fri">&nbsp;<input type="text" placeholder="Faculty" name="facname8fri"> </td>
+                <td><input type="text" placeholder="Sub Name" name="subname8sat">&nbsp;<input type="text" placeholder="Faculty" name="facname8sat"> </td>
+
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <button  class ="gg" type="submit"> SUBMIT</button>
+    </form>
+</body>
+</html>

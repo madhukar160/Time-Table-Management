@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          
+            background-size: 70%;
+            background-color: white;
+            background-image: url("https://img.freepik.com/premium-photo/clear-gradient-color-background_36043-2954.jpg");
+            background-size: 100%;
+        }
+        
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+
+select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color:  #4a4646;
+
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover style for the submit button */
+button[type="submit"]:hover {
+  background-color: #c63d3d;
+}
+.he{
+    font-size: 24px;
+    color: aliceblue;
+
+}
+.heh{
+    font-size: 24px;
+    
+}
+.tt{
+    margin-top: 150px;
+    border-style: ridge;
+    padding-bottom: 30px;
+    background-color : #450000;
+    margin-left: 450px;
+    margin-right: 450px;
+    box-shadow: 10px 20px 30px #450000;
+    
+            
+    
+
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <form class="tt" action="/fulltimetable" name="tt" method="post">
+        <label class="he" for="whichyear"><h4>Select Year</h4></label>
+    <select class="heh" name="year" id="year">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <label class ="he" for="whichsec"><h4>Select Section</h4></label>
+    <select class="heh" name="section" id="sec">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+    <button type="submit" id="butt">Submit</button>
+    </form>
+</body>
+</html>

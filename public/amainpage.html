@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-left: 100px;
+        }
+        th {
+            background-color:#450000;
+            Color:white;
+        }
+        body{ 
+        background-image: url("https://img.freepik.com/premium-photo/clear-gradient-color-background_36043-2954.jpg");
+        background-size: 100%;
+        }
+        th, td {
+            width:150px;
+            text-align:center;
+            border:1px solid black;
+            padding:5px
+         
+        }
+        h1{
+          text-align: center;
+        }
+        table{
+            table-layout:auto;
+        }
+        .geeks {
+            border-right:hidden;
+        }
+        .gfg {
+            border-collapse:separate;
+            border-spacing:0 15px;
+        }
+        h1 {
+            color:#450000;
+        }
+        .gd{
+          margin-left: 100px;
+        }
+        .d{
+          margin-left: 100px;
+          color:#f8ecec;
+          background-color: #450000;
+          background-size: 30px;
+        }
+        table {
+          border-collapse: collapse;
+          width: 50%;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="gd">
+    <h1>Welcome Admin...</h1>
+    
+    <h3>Now you can change , create timetables of your wish.</h3>
+    <form action="/amainpage" method="post" name="maindb" id="">
+
+    <label for="year">Choose Year : </label>
+    <select name="year" id="year">
+        
+        <option value="2">2</option>
+        <option value="3">3 </option>
+        <option value="4">4</option>
+        
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <label for="section">Choose Section : </label>
+    <select name="section" id="section">
+        
+        <option value="A">A</option>
+        <option value="B">B </option>
+        <option value="C">C</option>
+    
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="day">Choose day : </label>
+    <select name="day" id="day">
+        
+        <option value="mon">monday</option>
+        <option value="tues">tuesday </option>
+        <option value="wen">wednesday</option>
+        <option value="thu">thursday</option>
+        <option value="fri">friday </option>
+        <option value="sat">saturday</option>
+        
+      </select>
+    </div>
+    <br><br>
+        <table >
+            <thead>
+              <tr>
+                <th name="day" >Period</th>
+                <th name="day1" >day</th>
+              </tr>
+            </thead>
+            <tbody class="gfg">
+              <tr>
+                <td name="hour1">1</td>
+                <td><input type="text" placeholder="Sub Name" name="subname1">&nbsp;<input type="text" placeholder="Faculty" name="facname1"> </td>
+              </tr>
+              <tr>
+                <td name="hour2">2</td>
+                <td><input type="text" placeholder="Sub Name" name="subname2">&nbsp;<input type="text" placeholder="Faculty" name="facname2"> </td>
+
+              </tr>
+              <tr>
+                <td name="hour3">3</td>
+                <td><input type="text" placeholder="Sub Name" name="subname3">&nbsp;<input type="text" placeholder="Faculty" name="facname3"> </td>
+          
+              <tr>
+                <td name="hour4">4</td>
+                <td><input type="text" placeholder="Sub Name" name="subname4">&nbsp;<input type="text" placeholder="Faculty" name="facname4"> </td>
+
+              </tr>
+              <tr>
+                <td name="hour5">5</td>
+                <td><input type="text" placeholder="Sub Name" name="subname5">&nbsp;<input type="text" placeholder="Faculty" name="facname5"> </td>
+              </tr>
+              <tr>
+                <td name="hour6">6</td>
+                <td><input type="text" placeholder="Sub Name" name="subname6">&nbsp;<input type="text" placeholder="Faculty" name="facname6"> </td>
+              
+              </tr>
+              <tr>
+                <td name="hour7">7</td>
+                <td><input type="text" placeholder="Sub Name" name="subname7">&nbsp;<input type="text" placeholder="Faculty" name="facname7"> </td>
+              </tr>
+
+              <tr>
+                <td name="hour8">8</td>
+                <td><input type="text" placeholder="Sub Name" name="subname8">&nbsp;<input type="text" placeholder="Faculty" name="facname8"> </td>
+
+              </tr>
+            </tbody>
+          </table>
+          
+
+          <input type="submit" id="d" class="d" value="submit" >
+    </form>
+</body>
+</html>
